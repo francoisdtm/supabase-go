@@ -1,0 +1,4 @@
+github.com/carlmjohnson/requests v0.23.1 h1:d8FpOZC6We3raxa3cW1oEyK+cNz4XSW8A6wjMkMsbOM=
+github.com/carlmjohnson/requests v0.23.1/go.mod h1:i/0+cvgndkM7SPtw911bcbYR4CP+/9vP/+TbcFqPz3A=
+golang.org/x/net v0.5.0 h1:GyT4nK/YDHSqa1c4753ouYCDajOYKTja9Xb/OHtgvSw=
+golang.org/x/net v0.5.0/go.mod h1:DivGGAXEgPSlEBzxGzZI+ZLohi+xUj054jfeKui00ws=
