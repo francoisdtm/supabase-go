@@ -3,8 +3,9 @@ package supabase
 import (
 	"context"
 	"fmt"
-	"francoisdtm/supabase-go/auth"
-	"francoisdtm/supabase-go/db"
+
+	"github.com/francoisdtm/supabase-go/auth"
+	"github.com/francoisdtm/supabase-go/db"
 
 	"github.com/carlmjohnson/requests"
 )

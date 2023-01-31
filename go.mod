@@ -1,4 +1,4 @@
-module francoisdtm/supabase-go
+module github.com/francoisdtm/supabase-go
 
 go 1.19
 
