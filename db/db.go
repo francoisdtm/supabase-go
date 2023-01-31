@@ -19,6 +19,12 @@ func (b *SelectBuilder) Select(columns ...string) *SelectBuilder {
 	return b
 }
 
+// Set the object to decode the response into
+func (b *SelectBuilder) To(v any) *SelectBuilder {
+	b.req.ToJSON(v)
+	return b
+}
+
 type InsertBuilder struct{ *builder }
 
 // Create a new builder for inserting into a table
@@ -37,6 +43,12 @@ func (b *InsertBuilder) Values(v any) *InsertBuilder {
 	return b
 }
 
+// Set the object to decode the response into
+func (b *InsertBuilder) To(v any) *InsertBuilder {
+	b.req.ToJSON(v)
+	return b
+}
+
 type UpdateBuilder struct{ *filterBuilder }
 
 // Create a new builder for updating a table
@@ -47,6 +59,12 @@ func Update(req *requests.Builder, table string) *UpdateBuilder {
 // Add values to the request body
 func (b *UpdateBuilder) Values(v any) *UpdateBuilder {
 	b.req.BodyJSON(v)
+	return b
+}
+
+// Set the object to decode the response into
+func (b *UpdateBuilder) To(v any) *UpdateBuilder {
+	b.req.ToJSON(v)
 	return b
 }
 
