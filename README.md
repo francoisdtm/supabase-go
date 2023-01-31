@@ -1,5 +1,10 @@
 # Supabase-Go 🚀
 
+[![Go Version](https://img.shields.io/github/go-mod/go-version/francoisdtm/supabase-go.svg)](https://github.com/francoisdtm/supabase-go)
+[![go.dev reference](https://img.shields.io/badge/-reference-007d9c?logo=go&logoColor=white&labelColor=555)](https://pkg.go.dev/github.com/francoisdtm/supabase-go)
+[![GoReportCard](https://goreportcard.com/badge/github.com/francoisdtm/supabase-go)](https://goreportcard.com/report/github.com/francoisdtm/supabase-go)
+![License](https://img.shields.io/github/license/francoisdtm/supabase-go)
+
 An unofficial client library for [Supabase](https://supabase.io/) written in Go.
 It facilitates authentication and database querying without relying on GoTrue or any Postgresql library.
 
