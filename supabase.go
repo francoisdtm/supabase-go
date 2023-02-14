@@ -40,6 +40,12 @@ func (c *Client) SignIn(ctx context.Context, email string, password string) (err
 	return err
 }
 
+// AUTH: Sign in with a token
+func (c *Client) SignInWithToken(ctx context.Context, token string) (user *auth.User, err error) {
+	c.accessToken = token
+	return c.GetUser(ctx)
+}
+
 // AUTH: Send a magic link to the given email address
 func (c *Client) SignInWithMagicLink(ctx context.Context, email string) (err error) {
 	return auth.SignInWithMagicLink(ctx, c.api(), email)
